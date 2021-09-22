@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.container{
+    max-width: 1000px;
+    border: 1px black solid;
+    border-radius: 10px;
+    display: flex;
+    height: 400px;
+    width: 100vw;
+    overflow: hidden;
+    align-items: center;
+    background-color: white;
+}
+
+@media screen and (max-width:700px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+.cont__image__container {
+    overflow: hidden;
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.cont__image__container > img {
+    object-fit:cover;
+}
+@media screen and (max-width:700px) {
+    .cont__image__container > img {
+   
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.cont__image__container > span {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+.cont__info__container {
+    flex: 1;
+    margin: 0 5%;
+}
+
+@media screen and (max-width:700px) {
+    .cont__info__container {
+        flex: 1;
+        margin: 5% 5%;
+    }
+}
+
+.cont__info__container > h1 {
+    font-size: 25px;
+    color: rgb(49, 43, 43);
+}
+
+.cont__info__container > p {
+    line-height: 25px;
+    font-size: 18px;
+    margin: 20px 0;
+    color: rgb(92, 86, 86);
+}
+
+.cont__info__container > button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(43, 151, 43);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: .8px;
+}
+
+button:hover{
+    background-color: rgb(44, 196, 44);
+    cursor: pointer;
+}
